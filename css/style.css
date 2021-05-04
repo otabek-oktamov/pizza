@@ -573,6 +573,9 @@
   background-image: url('../img/bg-vegitable.png');
   background-position: center;
   background-repeat: no-repeat;
+  background-color: var(--hero-bg);
+  padding-bottom: 270px;
+  position: relative;
 }
 
 .order-title {
@@ -596,7 +599,38 @@
 .form-control {
   padding: 20px 30px;
   border-radius: 30px;
-  border: 2px solid #222;
+  border: none;
   outline: none;
   background-color: white;
+  margin-right: 40px;
+}
+
+.call-back-btn {
+  background: linear-gradient(180deg, #FE5626 0%, #F23F0E 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.call-back-btn::after {
+  content: '';
+  background-image: url('../img/arrow.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 9px;
+  margin-left: 50px;
+}
+
+.car {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer__container {
+  padding: 25px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
