@@ -1,80 +1,158 @@
 <!DOCTYPE html>
 <html class="html" lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Delivery</title>
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Delivery</title>
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-  <body class="site-body">
+<body class="site-body">
 
-    <div class="hero">
+  <div class="hero">
 
-      <header class="site-header">
-        <div class="container site-header__container">
+    <header class="site-header">
+      <div class="container site-header__container">
 
-          <nav class="site-nav">
-            <ul class="site-nav__lists">
-              <li class="site-nav__item"><a href="#" class="site-nav__link">Payment</a></li>
-              <li class="site-nav__item"><a href="#" class="site-nav__link">About
-                  us</a></li>
-              <li class="site-nav__item"><a href="#" class="site-nav__link">Contacts</a></li>
-            </ul>
-          </nav>
+        <nav class="site-nav">
+          <ul class="site-nav__lists">
+            <li class="site-nav__item"><a href="#" class="site-nav__link">Payment</a></li>
+            <li class="site-nav__item"><a href="#" class="site-nav__link">About
+                us</a></li>
+            <li class="site-nav__item"><a href="#" class="site-nav__link">Contacts</a></li>
+          </ul>
+        </nav>
 
-          <a class="site-logo" href="#">
-            <img src="img/logo.png" alt="restarant logo" width="112"
-              height="62">
-          </a>
+        <a class="site-logo" href="#">
+          <img src="img/logo.png" alt="restarant logo" width="112" height="62">
+        </a>
 
-          <div class="daily">
-            <p class="daily__time">Daily <time datetime="1914-12-20T11:00"> 11am
-                - 9pm</time></p>
-            <a class="daily__phone-number" href="tel:+998999333819"><b>0 800 33
-                08 98</b></a>
-          </div>
-
+        <div class="daily">
+          <p class="daily__time">Daily <time datetime="1914-12-20T11:00"> 11am
+              - 9pm</time></p>
+          <a class="daily__phone-number" href="tel:+998999333819"><b>0 800 33
+              08 98</b></a>
         </div>
-      </header>
-      <div class="deliver">
-        <div class="container deliver__container">
-          <div class="deliver-enter">
-            <h1 class="title deliver__title">
-              Food delivery in Kovel
-            </h1>
-            <p class="deliver__text">If you decide to relax or have unexpected
-              guests, call us. We make sure that your vacation is comfortable,
-              enjoyable and delicious</p>
-          </div>
-          <img class="deliver__img-pizza" src="img/hero-pizza.png" alt="pizza"
-            width="845" height="590">
-        </div>
+
       </div>
-
+    </header>
+    <div class="deliver">
+      <div class="container deliver__container">
+        <div class="deliver-enter">
+          <h1 class="title deliver__title">
+            Food delivery in Kovel
+          </h1>
+          <p class="deliver__text">If you decide to relax or have unexpected
+            guests, call us. We make sure that your vacation is comfortable,
+            enjoyable and delicious</p>
+        </div>
+        <img class="deliver__img-pizza" src="img/hero-pizza.png" alt="pizza" width="845" height="590">
+      </div>
     </div>
 
-    <!-- Korzina -->
+  </div>
 
-    <div class="korzina">
-      <a class="korzina__link" href="#">
-        <span class="korzina__nofication">2</span>
-      </a>
-      <div class="korzina__sum">= 298 ₴</div>
-    </div>
+  <!-- Korzina -->
+
+  <div class="korzina">
+    <a class="korzina__link" href="#">
+      <span class="korzina__nofication">2</span>
+    </a>
+    <div class="korzina__sum">= 298 ₴</div>
+  </div>
 
   <main class="site-main">
     <div class="popular-dishes">
-      
+
+ <div class="container popular-dishes__container">
+  <section class="popular-dishes__menu">
+    <h2 class="popular-dishes__title title">Popular dishes</h2>
+    <ul class="menu-lists">
+      <li class="menu-lists__item menu-lists__item_active"><a href="#" class="menu-lists__link menu-lists__link_active">Pizza</a></li>
+      <li class="menu-lists__item"><a href="#" class="menu-lists__link">Sushi</a></li>
+      <li class="menu-lists__item"><a href="#" class="menu-lists__link">Salad</a></li>
+      <li class="menu-lists__item"><a href="#" class="menu-lists__link">Osh</a></li>
+      <li class="menu-lists__item"><a href="#" class="menu-lists__link">Deserts</a></li>
+    </ul>
+  </section>
+  <ul class="pizza-cards">
+    <li class="card">
+      <a class="card__title"> Quattro formaggi <span class="card__title-sm">32sm</span></a>
+      <p class="card__text">Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
+      <span class="card__costs">119 UAH</span>
+      <a class="card__store" href="#">
+        <img  src="img/store-default.png" alt="store" width="12" height="14">
+      </a>
+    </li>
+    <li class="card card__kobanaro">
+      <a class="card__title">Карбонара <span class="card__title-sm">32sm</span></a>
+      <p class="card__text">Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
+      <span class="card__costs">119 UAH</span>
+      <a class="card__store card__store_accent" href="#">
+        <img  src="img/store-accent.png" alt="store" width="12" height="14">
+      </a>
+    </li>
+    <li class="card card__selmon">
+      <span class="pro">xit</span>
+      <a class="card__title"> Філадельфія селмон <span class="card__title-sm">32sm</span></a>
+      <p class="card__text">Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
+      <span class="card__costs">119 UAH</span>
+      <a class="card__store" href="#">
+        <img  src="img/store-default.png" alt="store" width="12" height="14">
+      </a>
+    </li>
+    <li class="card card__dimar">
+      <a class="card__title">Ді маре <span class="card__title-sm">32sm</span></a>
+      <p class="card__text">Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
+      <span class="card__costs">119 UAH</span>
+      <a class="card__store" href="#">
+        <img  src="img/store-default.png" alt="store" width="12" height="14">
+      </a>
+    </li>
+    <li class="card">
+      <a class="card__title"> Quattro formaggi <span class="card__title-sm">32sm</span></a>
+      <p class="card__text">Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
+      <span class="card__costs">119 UAH</span>
+      <a class="card__store" href="#">
+        <img  src="img/store-default.png" alt="store" width="12" height="14">
+      </a>
+    </li>
+    <li class="card card__kvato">
+      <a class="card__title"> Кватро формаджіо <span class="card__title-sm">32sm</span></a>
+      <p class="card__text">Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
+      <span class="card__costs">119 UAH</span>
+      <a class="card__store" href="#">
+        <img  src="img/store-default.png" alt="store" width="12" height="14">
+      </a>
+    </li>
+    <li class="card">
+      <a class="card__title"> Quattro formaggi <span class="card__title-sm">32sm</span></a>
+      <p class="card__text">Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
+      <span class="card__costs">119 UAH</span>
+      <a class="card__store" href="#">
+        <img  src="img/store-default.png" alt="store" width="12" height="14">
+      </a>
+    </li>
+    <li class="card">
+      <a class="card__title"> Quattro formaggi <span class="card__title-sm">32sm</span></a>
+      <p class="card__text">Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
+      <span class="card__costs">119 UAH</span>
+      <a class="card__store" href="#">
+        <img  src="img/store-default.png" alt="store" width="12" height="14">
+      </a>
+    </li>
+  </ul>
+ </div>
+
     </div>
   </main>
 
 
 
 
-  </body>
+</body>
 
 </html>
