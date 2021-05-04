@@ -1,52 +1,50 @@
 /* CUSTOM PROPS */
+
 :root {
   --accent-color: #fe5626;
   --green: #46cb72;
+  --text-color: #222;
+  --hero-bg:#F0F5FB;
+
 }
 
 /* FONTS */
+
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/montserrat-v15-latin-300.woff2") format("woff2"),
-    url("../fonts/montserrat-v15-latin-300.woff") format("woff");
+  src: url("../fonts/montserrat-v15-latin-300.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-300.woff") format("woff");
 }
 
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/montserrat-v15-latin-regular.woff2") format("woff2"),
-    url("../fonts/montserrat-v15-latin-regular.woff") format("woff");
+  src: url("../fonts/montserrat-v15-latin-regular.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/montserrat-v15-latin-600.woff2") format("woff2"),
-    url("../fonts/montserrat-v15-latin-600.woff") format("woff");
+  src: url("../fonts/montserrat-v15-latin-600.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-600.woff") format("woff");
 }
 
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/montserrat-v15-latin-700.woff2") format("woff2"),
-    url("../fonts/montserrat-v15-latin-700.woff") format("woff");
+  src: url("../fonts/montserrat-v15-latin-700.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-700.woff") format("woff");
 }
 
-/* GLOBAL */
 .html {
   box-sizing: border-box;
   height: 100%;
   scroll-behavior: smooth;
 }
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: inherit;
 }
 
@@ -59,7 +57,9 @@
   background-color: #fff;
   color: #222;
 }
-/* HELPERS */
+
+/* Helpers */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -80,6 +80,7 @@
 }
 
 /* korzina styles */
+
 .korzina {
   position: fixed;
   right: 40px;
@@ -141,4 +142,132 @@
   border-bottom: 12px solid transparent;
   border-left: 12px solid #333;
   content: "";
+}
+
+
+.hero{
+  background-image: url('../img/hero-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 500px;
+  background-color:var(--hero-bg) ;
+}
+
+/* site header styles */
+
+.site-header {
+  padding: 25px 0px;
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-nav__lists {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.site-nav__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.site-nav__item {
+  list-style-type: none;
+}
+
+.site-nav__link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: 0.3s;
+}
+
+.site-nav__link:hover {
+  color: var(--accent-color);
+}
+
+.logo {
+  display: block;
+}
+
+.daily {
+  display: flex;
+  align-items: center;
+}
+
+.daily__time {
+  margin-right: 40px;
+}
+
+.daily::before {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--green);
+  margin-right: 9px;
+}
+
+.daily__phone-number {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.daily__phone-number:hover{
+  color: var(--accent-color);
+}
+.daily__phone-number::before{
+  content: '';
+  width: 33px;
+  height: 50px;
+  background-image: url('../img/phone.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 16px;
+}
+
+
+.deliver{
+  padding-top: 103px;
+}
+.deliver-enter{
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
+}
+.deliver__title{
+  padding: 0;
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  margin-bottom: 18px;
+}
+.deliver-text{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.deliver__img-pizza{
+ position: absolute;
+ left: 50%;
+ transform: translateX(-50%);
+ margin-bottom: -100px;
 }
