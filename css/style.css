@@ -288,6 +288,10 @@
   padding-top: 150px;
 }
 
+.popular-dishes {
+  margin-bottom: 100px;
+}
+
 .popular-dishes__menu {
   position: relative;
   margin-bottom: 50px;
@@ -376,11 +380,13 @@
   transition: 0.5s;
   margin-bottom: 50px;
 }
-.card:hover{
+
+.card:hover {
   background-color: var(--green);
   color: white;
   border: 2px solid var(--green);
 }
+
 .card:before {
   content: '';
   width: 170px;
@@ -391,30 +397,35 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 50%;
- transform: translateX(-55%);
- margin-bottom: 30px;
- padding: 20px;
+  transform: translateX(-55%);
+  margin-bottom: 30px;
+  padding: 20px;
 }
-.card__kobanaro::before{
+
+.card__kobanaro::before {
   background-image: url('../img/pizza2.png');
 }
-.card__selmon::before{
+
+.card__selmon::before {
   background-image: url('../img/pizza3.png');
 }
-.card__dimar::before{
+
+.card__dimar::before {
   background-image: url('../img/pizza4.png');
 }
-.card__kvato::before{
+
+.card__kvato::before {
   background-image: url('../img/pizza7.png');
 }
-.card::after{
+
+.card::after {
   position: absolute;
   background-color: #FFF;
   width: 50px;
   height: 50px;
   content: "";
   margin-bottom: 10px;
-  border-radius: 0 0 25px 0 ;
+  border-radius: 0 0 25px 0;
   border-right: 2px solid #eceef7;
   border-bottom: 2px solid #eceef7;
   transform: rotate(45deg);
@@ -422,20 +433,22 @@
   left: 103px;
   z-index: -4;
 }
-.card:hover::after{
+
+.card:hover::after {
   position: absolute;
   background-color: var(--green);
   width: 50px;
   height: 50px;
   content: "";
   margin-bottom: 10px;
-  border-radius: 0 0 25px 0 ;
+  border-radius: 0 0 25px 0;
   transform: rotate(45deg);
   bottom: -37px;
   left: 103px;
   z-index: -4;
 }
-.card__title{
+
+.card__title {
   font-weight: 600;
   line-height: 22px;
   margin: 0;
@@ -445,13 +458,15 @@
   text-align: left;
   position: relative;
 }
-.card__title-sm{
+
+.card__title-sm {
   font-size: 12px;
   font-weight: 400;
   position: absolute;
   right: 0;
 }
-.card__text{
+
+.card__text {
   font-size: 12px;
   font-weight: 400;
   line-height: 17px;
@@ -460,24 +475,28 @@
   margin-bottom: 19px;
   text-align: left;
 }
-.card__costs{
+
+.card__costs {
   font-size: 24px;
   font-weight: 300;
   text-align: center;
   display: block;
   margin-bottom: 18px;
 }
-.card__store{
+
+.card__store {
   padding: 7px 10px;
   border: 1px solid var(--hero-bg);
   border-radius: 50%;
   margin-left: -10px;
 }
-.card__store_accent{
+
+.card__store_accent {
   border: none;
   background-color: var(--accent-color);
 }
-.pro{
+
+.pro {
   padding: 5px 25px;
   border-radius: 5px;
   position: absolute;
@@ -487,4 +506,97 @@
   left: 5%;
   font-size: 12px;
   font-weight: 600;
+}
+
+.refresh-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.refresh {
+  width: 60px;
+  height: 60px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background: none;
+  background-image: url('../img/more.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slider {
+  padding: 40px 0px;
+  background-image: url('../img/korusel.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 127px;
+}
+
+.insta-link {
+  padding: 15px;
+  border-radius: 10px;
+  background: linear-gradient(45.04deg, #FD9924 -51.05%, #F65B16 134.89%);
+  width: 420px;
+  height: 180px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  transition: 0.2s;
+}
+
+.insta-link:hover {
+  background: linear-gradient(45.04deg, #F65B16 134.89%, #FD9924 -51.05%);
+}
+
+.insta {
+  padding: 50px 20px;
+  color: white;
+  text-decoration: none;
+  border: 1px solid var(--btn-bg);
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.user-link {
+  font-weight: 700;
+}
+
+.order {
+  padding-top: 82px;
+  background-image: url('../img/bg-vegitable.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.order-title {
+  text-align: center;
+  max-width: 500px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 42px;
+  margin: auto;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-control {
+  padding: 20px 30px;
+  border-radius: 30px;
+  border: 2px solid #222;
+  outline: none;
+  background-color: white;
 }
